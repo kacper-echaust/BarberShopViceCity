@@ -1,0 +1,13 @@
+.tittleContainer {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5%;
+	text-transform: uppercase;
+	text-align: center;
+}
+.tittleContainer h1 {
+	padding: 10px 50px;
+	border-bottom: 3px solid #df81ab;
+	font-size: 1.5rem;
+}

@@ -1,0 +1,45 @@
+@import url('../colors.css');
+.footer,
+.creatorContainer {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	font-size: 1vw;
+}
+.footer {
+	height: 10vh;
+	background-color: var(--blue-color);
+}
+.socialMediaIconsContainer {
+	font-size: 2vw;
+}
+.link {
+	margin: 0 0.3vw;
+	text-decoration: none;
+	transition: color 0.3s ease-out;
+}
+.link:visited {
+	color: black;
+}
+.link:active,
+.link:hover {
+	color: var(--pink-color);
+}
+@media (max-width: 768px) {
+	.footer,
+	.creatorContainer {
+		font-size: 1.5vw;
+	}
+	.socialMediaIconsContainer {
+		font-size: 3vw;
+	}
+}
+@media (max-width: 576px) {
+	.footer,
+	.creatorContainer {
+		font-size: 1.8vw;
+	}
+	.socialMediaIconsContainer {
+		font-size: 4vw;
+	}
+}

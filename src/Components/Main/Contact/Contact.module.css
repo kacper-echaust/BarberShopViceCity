@@ -1,0 +1,55 @@
+@import url('../../colors.css');
+.section {
+	/* height: 100vh; */
+	font-size: 1.2vw;
+}
+.contentContainer {
+	display: flex;
+}
+.textContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+}
+.textContainer ul {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+.textContainer p,
+.textContainer ul {
+	margin: 0;
+}
+.textContainer span {
+	margin-top: 10px;
+	font-size: 0.8vw;
+	color: var(--pink-color);
+}
+@media (max-width: 992px) {
+	.textContainer span {
+		font-size: 1vw;
+	}
+}
+@media (max-width: 768px) {
+	.section {
+		font-size: 2vw;
+	}
+	.contentContainer {
+		flex-direction: column-reverse;
+	}
+	.textContainer {
+		margin-bottom: 30px;
+	}
+	.textContainer span {
+		font-size: 1.2vw;
+	}
+}
+@media (max-width: 576px) {
+	.section {
+		font-size: 2.5vw;
+	}
+	.textContainer span {
+		font-size: 1.8vw;
+	}
+}

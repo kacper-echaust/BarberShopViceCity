@@ -1,0 +1,18 @@
+.reservationButton {
+	padding: 1rem 3rem;
+	max-width: 300px;
+	background-color: transparent;
+	border: 2px solid #df81ab;
+	color: #df81ab;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.5rem;
+	border-radius: 2px;
+	transition: color 0.4s;
+	transition: background-color 0.4s;
+}
+.reservationButton:hover {
+	color: #ffffff;
+	background-color: #db508e;
+}

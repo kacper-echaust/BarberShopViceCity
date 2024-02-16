@@ -1,0 +1,70 @@
+@import url('../colors.css');
+
+.section {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-image: linear-gradient(var(--pink-color), var(--blue-color));
+	height: 100vh;
+	color: wheat;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 400px;
+	max-width: 100vw;
+}
+.contentContainer {
+	display: flex;
+	justify-content: space-evenly;
+	text-align: center;
+}
+.openPopupButton {
+	width: 300px;
+	padding: 10px 20px;
+	border: 2px solid var(--blue-color);
+	border-radius: 5px;
+	font-size: 20px;
+	background: none;
+	color: wheat;
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background 0.5s ease;
+}
+.openPopupButton:hover {
+	background: var(--pink-color);
+}
+.backToMainPageButton {
+	position: absolute;
+	bottom: 50px;
+	text-decoration: none;
+	color: var(--pink-color);
+	border: 1px solid var(--pink-color);
+	border-radius: 5px;
+	padding: 10px 20px;
+	transition: 0.5s ease;
+}
+.backToMainPageButton:hover {
+	color: var(--blue-color);
+	background: var(--pink-color);
+}
+
+@media (max-width: 992px) {
+	.contentContainer {
+		flex-direction: column;
+		align-items: center;
+	}
+	.container {
+		margin: 30px 0;
+	}
+	.backToMainPageButton {
+		bottom: 10px;
+	}
+}
+@media (max-width: 576px) {
+	.container {
+		font-size: 2.8vw;
+	}
+}

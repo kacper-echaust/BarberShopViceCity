@@ -1,0 +1,108 @@
+@import url('../../../colors.css');
+.firstProfile,
+.secondProfile {
+	opacity: 0;
+}
+.profileContainer,
+.descriptionContainer {
+	display: flex;
+}
+.imageContainer {
+	width: 50%;
+	height: 100vh;
+	overflow: hidden;
+}
+.image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: 0.5s;
+}
+.image:hover {
+	filter: blur(2px);
+	transform: scale(1.2);
+}
+.descriptionContainer {
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	width: 50%;
+	text-transform: uppercase;
+	font-size: 1vw;
+	z-index: 2;
+}
+.descriptionContainer h2 {
+	border-bottom: 3px solid var(--pink-color);
+	padding: 0 5vw;
+	letter-spacing: 3px;
+}
+.descriptionContainer .list {
+	text-decoration: none;
+	list-style: none;
+	padding: 0;
+}
+.descriptionContainer .list li {
+	border-bottom: 1px solid grey;
+	padding: 0.8vw;
+}
+.reservationButton {
+	margin-bottom: 50px;
+}
+.firstProfileAnimation {
+	animation: firstProfileAnimation 1s forwards;
+}
+.secondProfileAnimation {
+	animation: secondProfileAnimation 1s forwards;
+}
+@keyframes firstProfileAnimation {
+	from {
+		opacity: 0;
+		transform: translate(-1000px);
+	}
+	to {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+@keyframes secondProfileAnimation {
+	from {
+		opacity: 0;
+		transform: translate(1000px);
+	}
+	to {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+@media (max-width: 992px) {
+	.descriptionContainer {
+		font-size: 1.5vw;
+	}
+	.descriptionContainer h2 {
+		font-size: 2.5vw;
+	}
+}
+@media (max-width: 768px) {
+	.profileContainer {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.imageContainer {
+		width: 100%;
+		opacity: 0.4;
+	}
+	.image {
+		height: 100vh;
+	}
+	.descriptionContainer {
+		position: absolute;
+		font-size: 2.5vw;
+	}
+	.descriptionContainer h2 {
+		font-size: 3.5vw;
+	}
+	.reservationButton {
+		margin-top: 40px;
+	}
+}
