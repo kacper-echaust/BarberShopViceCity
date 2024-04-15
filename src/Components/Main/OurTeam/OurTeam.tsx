@@ -13,7 +13,7 @@ const OurTeam = () => {
 			<Profile name='arek' photoLink={arekImage}>
 				<ReservationButton href='https://booksy.com/pl-pl/147660_barbershop-vice-city_barber-shop_12859_zory/staffer/290607#ba_s=bd_1' />
 			</Profile>
-			<Profile name='paulina' photoLink={paulinaImage} style={{ order:'2'}}>
+			<Profile name='paulina' photoLink={paulinaImage} style={{ direction: 'rtl' }}>
 				<ReservationButton href='https://booksy.com/pl-pl/147660_barbershop-vice-city_barber-shop_12859_zory/staffer/313491#ba_s=bd_1' />
 			</Profile>
 		</section>
