@@ -1,6 +1,12 @@
 import css from './ReserationButton.module.css'
 import classNames from 'classnames'
-const ReservationButton = ({ className,href }: any) => {
+
+type ReserationButtonType = {
+	className?: string,
+	href: string
+}
+
+const ReservationButton = ({ className,href }: ReserationButtonType) => {
 	const reservationButtonClasses = classNames(css.reservationButton, className)
 	return (
 		<a href={href}>

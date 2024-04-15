@@ -16,7 +16,6 @@ const Profile = ({ name, photoLink, className, children, style }: ProfileType) =
 		<>
 			<div className={css.profileContainer} style={style}>
 				<div className={css.imageContainer}>
-
 				<img className={css.image} src={photoLink} alt='Worker' />
 				</div>
 				<div className={css.descriptionContainer}>
