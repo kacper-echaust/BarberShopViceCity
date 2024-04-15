@@ -1,0 +1,10 @@
+.list {
+	text-decoration: none;
+	list-style: none;
+	padding: 0;
+}
+.list li {
+	border-bottom: 1px solid grey;
+	padding: 0.8vw;
+	text-transform: uppercase;
+}

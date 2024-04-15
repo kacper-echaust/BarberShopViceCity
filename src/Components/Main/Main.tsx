@@ -1,6 +1,6 @@
 //CSS
 import css from './Main.module.css'
-//Komponenty
+//Components
 import { OurTeam } from './OurTeam/OurTeam'
 import { Opinions } from './Opinions/Opinions'
 import { OurWorks } from './OurWorks/OurWorks'
